@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FreeSkate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|ZCOOL+XiaoWei" rel="stylesheet">
+    <script src="main.js"></script>
+</head>
+<body>
+    <header>
+
+        <div class="banner">
+            <img class="mySlides" src="images/alone.jpg" style="width:100%">
+            <img class="mySlides" src="images/mentalhealth.jpg" style="width:100%">
+            <img class="mySlides" src="images/hands.jpg" style="width:100%">
+            <img class="mySlides" src="images/depression.jpg" style="width:100%">
+        </div>
+
+        <div class="about">
+           <h1>Thank you for visiting my website. This website is dedicated to supporting people to overcome their difficulties and live a life that is personally meaningful and fulfilling. It provides a friendly, confidential integrative services online and offline for most psychological, emotional, and relationship issues, and can also help to increase confidence, motivation, focus and communication skills. We have a group of psychologist of different fields like counselling, clinical, developmental,etc. you can also reach out to us if you are worried about someone you know. You're not alone; talk to someone you trust. Sharing a problem is often the first step to recovery.</h1>
+        </div>
+        <div class="relax">
+            <img src="images/relax.jpg" alt="relax" style="width: 100%"> 
+        </div>
+    </header> 
+    
+    
+    <script>
+            // Automatic Slideshow - change image every 2 seconds
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}
+              x[myIndex-1].style.display = "block";
+              setTimeout(carousel, 3000);
+            }
+    </script>
+</body>
+</html>    

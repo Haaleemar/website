@@ -1,0 +1,333 @@
+:root {
+    --accent-color: #E94312;
+}
+
+body {
+	margin: 0;
+	background-color:#434343;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.hero-image {
+	background: url(images/hands.jpg) no-repeat center;
+	background-size: cover;
+	height: 500px;
+	position: relative;
+}
+
+.hero-text {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: wheat;
+}
+
+.contact {
+	background-color: black;
+	text-align: center;
+	font-family: sans-serif;
+    font-size: 2em;
+	padding: 100px;
+	color: wheat;
+}
+
+.about h1 {
+	text-align: center;
+	font-size: 20px;
+	color: wheat;
+}
+
+h1 {
+	text-align: center;
+	font-family: sans-serif;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.nav-logo {
+    width: 15%;
+    font-family: sans-serif;
+    font-size: 2em;
+}
+
+.nav-links {
+    display: flex;
+    width: 65%;
+	list-style: none;
+}
+
+.nav-links li {
+    cursor: pointer;
+    color: black;
+}
+
+.nav-links li:hover {
+    color: var(--accent-color);
+    border-bottom: 1px solid var(--accent-color);
+}
+
+.nav-links li + li {
+    margin-left: 2em;
+}
+
+.nav-links a {
+	color: black;
+}
+
+header {
+    height: 100vh;
+    position: relative;
+}
+
+img.mySlides {
+	height:500px;
+	margin-right: 10px;
+}
+
+img.img-fluid {
+	width: 70%;
+	float: left;
+}
+
+.column {
+	float: left;
+	width: 31.6%;
+	padding: 10px;
+}
+
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.container form {
+	padding: 16px;
+}
+
+.container {
+    position: relative;
+    max-width: 1500px;
+    margin: 100px;
+}
+
+div .about {
+	background-color: black;
+	width:300px;
+	border: 15px gray;
+	padding: 50px;
+	margin: 20px;
+}
+
+.container img {
+	vertical-align: cover;
+	opacity: 0.5;
+	filter: alpha(opacity=50)
+}
+
+.relax img {
+	vertical-align: center;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	
+}
+.container .content {
+	position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: wheat;
+    width: 100%;
+	padding: 30px;
+	font-size: 35px;
+	text-align: center;
+}
+
+input[type=text], input[type=password] {
+	width: 100%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	display: inline-block;
+	border: none;
+	background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+	background-color: #dddddd;
+	outline: none;
+}
+
+hr {
+	border: 1px solid #f1f1f1;
+	margin-bottom: 25px;
+}
+
+.registerbtn {
+	background-color: grey;
+	color: white;
+	padding: 16px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	opacity: 0.9;
+}
+
+.registerbtn:hover {
+	opacity: 1;
+}
+
+a {
+	color: dodgerblue;
+}
+
+.signin {
+	background-color: #f1f1f1;
+	text-align: center;
+}
+
+p.text-warning {
+    color: #434343;
+	background-color: white;
+}
+
+li {
+	color: wheat;
+	background-color: white;
+	list-style: none;
+}
+
+img.img-fluid {
+	color: #434343;
+	background-color: white;
+}
+
+div.row {
+	color: #434343;
+	padding: 11px 13px;
+	margin-right: 5px;
+	border-radius: 50px;
+}
+
+div.container {
+	background-color: #434343;
+}
+
+form {
+	border: 1px solid grey;
+	padding: 30px;
+	margin-top: 30px;
+}
+
+input {
+	width: 100%;
+	margin-bottom: 20px;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	height: 40px;
+	border-color: purple
+}
+
+button {
+	background-color: purple;
+	border-color: purple;
+	padding: 10px 30px;
+	color: white;
+}
+
+/*For mobile view*/
+@media screen and (max-width: 650px) {
+	.container .content {
+		position: absolute;
+		bottom: 0;
+		background: rgba(0, 0, 0, 0.5);
+		color: wheat;
+		width: 100%;
+		padding: 15px;
+		font-size: 10px;
+		text-align: center;
+	}
+	
+	.contact {
+		background-color: black;
+		text-align: center;
+		font-family: sans-serif;
+		font-size: 1em;
+		padding: 100px;
+		color: wheat;
+	}
+}
+	/*For mobile view*/
+	@media screen and (max-width: 650px) {
+		.container .content {
+			position: absolute;
+			bottom: 0;
+			background: rgba(0, 0, 0, 0.5);
+			color: wheat;
+			width: 100%;
+			padding: 15px;
+			font-size: 5px;
+			text-align: center;
+		}
+		
+		.contact {
+			background-color: black;
+			text-align: center;
+			font-family: sans-serif;
+			font-size: 0.5em;
+			padding: 100px;
+			color: wheat;
+		}
+
+		form {
+			border: 1px solid grey;
+			padding: 1.5px;
+			margin-top: 15px;
+		}
+		
+		input {
+			width: 100%;
+			margin-bottom: 10px;
+			border-top: 0;
+			border-left: 0;
+			border-right: 0;
+			height: 40px;
+			border-color: purple
+		}
+		
+		button {
+			background-color: purple;
+			border-color: purple;
+			padding: 5px 15px;
+			color: white;
+		}
+
+		h1 {
+			font-size: 20px;
+		}
+
+		.nav-logo {
+			width: 5%;
+			font-size: 1.5em;
+			margin-right: 2em;
+		}
+
+		.nav-links {
+			display: flex;
+			width: 100%;
+			list-style: none;
+		}
+
+		.nav-links li + li {
+			margin-left: 1em;
+		}
+	}
